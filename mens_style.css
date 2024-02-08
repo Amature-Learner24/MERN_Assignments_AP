@@ -1,0 +1,192 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Section Styles */
+section {
+    min-height: 100vh;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: grey;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    height: 15vh;
+    padding: 20px;
+}
+
+.navbar-logo img {
+    display: flex;
+    height: 10vh;
+}
+
+.navbar-list {
+    display: flex;
+}
+
+.navbar-list li {
+    color: black;
+    display: flex;
+    font-weight: bold;
+    padding: 20px;
+}
+
+ul a {
+    text-decoration: none;
+    display: flex;
+}
+
+li:hover {
+    font-weight: 100;
+    color: white;
+    background-color: black;
+
+}
+
+/* Search Bar Styles */
+.search-bar {
+    float: right;
+    display: flex;
+    padding: 16px;
+}
+
+.search-bar input {
+    height: 6vh;
+    width: 30vw;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.search-bar button {
+    position: absolute;
+    height: 6vh;
+    padding: 5px 10px;
+    border-right: 2px solid black;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main Content Styles */
+.mens-fashion {
+    display: flex;
+    padding-top: 100px;
+}
+
+.men-products {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.men-products img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+h2 {
+    font-size: medium;
+}
+
+.men-products p {
+    font-weight: lighter;
+}
+
+.men-products button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    position: sticky;
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries for Responsive Design */
+/* Small screens, such as mobile */
+@media only screen and (max-width: 680px) {
+
+    /* Global Styles */
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Navigation Styles */ 
+    .navbar-logo img {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 5px;
+        left: 50%;
+        height: 3.5em;
+        transform: translateX(-50%);
+    }
+
+    .navbar-list li {
+        display: none;
+    }
+
+    /* Search Bar Styles */
+    .search-bar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 85px;
+        left: 130px;
+        height: 3.5em;
+        transform: translateY(-50%);
+        margin-top: 2px;
+
+    }
+
+    .search-bar button {
+        height: 1.8em;
+        transform: translateX(-50%);
+    }
+
+     /* Section Styles */
+     section {
+        min-height: 100vh;
+    }
+
+    /* Main Content Styles */
+    .mens-fashion {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: small;
+    }
+
+    .men-products p {
+        font-size: small;
+    }
+
+    .men-products button {
+        width: 80vw;
+    }
+
+    /* Footer Styles */
+    footer{
+        width: 100vw;
+    }
+}

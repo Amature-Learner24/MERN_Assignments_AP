@@ -1,0 +1,202 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container Styles */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: grey;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    height: 15vh;
+    padding: 20px;
+}
+
+.navbar-logo img{
+    display: flex;
+    height: 10vh;
+}
+
+.navbar-list{
+    display: flex;
+}
+
+.navbar-list li{
+    color: black;
+    display: flex;
+    font-weight: bold;
+    padding: 20px;
+}
+
+ul a{
+    text-decoration: none;
+    display: flex;
+}
+
+li:hover {
+    font-weight: 100;
+    color: white;
+    background-color: black;
+
+}
+
+/* Search Bar Styles */
+.search-bar{
+    float: right;
+    display: flex;
+    padding: 16px;
+}
+
+.search-bar input{
+    height: 6vh;
+    width: 30vw;
+    border-radius: 5px ;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.search-bar button{
+    position: absolute;
+    height: 6vh;
+    padding: 5px 10px;
+    border-right: 2px solid black;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main Content Styles */
+.wrapper{
+    margin-top: 92px;
+    display: flex;  
+    flex-direction: column;
+    justify-content: flex-start; 
+    overflow: hidden;
+}
+
+.wrapper img{
+    height: 42vh;
+    width: 100vw;
+    display: block;
+}
+
+.shortcut-menulist{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shortcut-menulist img{
+    border-radius: 50%;
+    height: 25vh;
+    padding: 10px;
+    overflow: auto;
+    cursor: pointer;
+}
+
+.shortcut-explore{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.shortcut-explore img{
+    margin-left: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer{
+    position: sticky;
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+  }
+
+/* Media Queries for Responsive Design */
+/* Small screens, such as mobile */
+@media only screen and (max-width: 680px){
+    /* Global Styles */
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Container Styles */
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vw;
+    }
+    
+    /* Navigation Styles */
+    .navbar-logo img{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .navbar-list li
+    {
+        display: none;
+    }
+
+    /* Search Bar Styles */
+    .search-bar{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 85px;
+        left: 130px;
+        height: 3.5em;
+        transform: translateY(-50%);
+    }
+
+    .search-bar button{
+        position: fixed;
+        height: 1.8em;
+        transform: translateX(-50%);
+    }
+    
+    /* Main Content Styles */
+    .shortcut-menulist img{
+        display: flex;
+        flex-direction: row;
+        height: 16vh;
+        width: 200vw;
+        overflow: scroll;
+    }
+
+    .shortcut-explore img{
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+    }
+
+    /* Footer Styles */
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+    }
+
+  }
+  
